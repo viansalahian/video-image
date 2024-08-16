@@ -1,0 +1,159 @@
+
+body {
+    margin: 10px 0;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo {
+    width: 200px;
+    padding: 11px 75px;
+
+}
+
+.user-btn {
+
+    padding: 23px 10px 0 0;
+
+}
+
+.user-btn a {
+    border-radius: 50px;
+    background-color: gray;
+    text-decoration: none;
+    color: white;
+    padding: 13px;
+
+}
+
+.user-btn a:hover {
+    background-color: #eb8307;
+    transition: all 0.5s ease;
+}
+
+input.search {
+    border: none;
+    outline: none;
+    background-color: black;
+    padding: 0.6rem;
+    border-radius: 30px;
+    width: 18rem;
+
+}
+
+.search-bar {
+    position: relative;
+    padding: 27px 60px;
+}
+
+.search-btn {
+    position: absolute;
+    left: 65px;
+    top: 35px;
+    border: none;
+    background-color: transparent;
+    color: #eb8307;
+}
+
+input::placeholder {
+    font-size: 17px;
+    text-align: right;
+
+}
+
+.menu {
+    padding: 10px 113px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    padding: 17px;
+}
+
+.item a {
+    text-decoration: white;
+    color: white;
+    font-size: 20px;
+
+}
+
+.item a i {
+    padding: 10px;
+    color: #eb8307;
+}
+
+.item a i:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease;
+
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.box {
+    width: 72px;
+    height: 36px;
+    background-color: #000;
+    border-radius: 150px;
+    cursor: pointer;
+    align-items: center;
+    position: relative;
+
+}
+
+.ball {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid black;
+    position: absolute;
+
+}
+
+.scenary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.sun {
+    font-size: 22px;
+    color: #ffd827;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+}
+
+.moon {
+    font-size: 22px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    margin-left: 10px;
+}
+
+.dark-mode {
+    background-color: #0d6efd;
+}
+
+
+

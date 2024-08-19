@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b62b6c8-89f5-4039-b7d3-ac7544358084" name="Changes" comment="" />
+    <list default="true" id="6b62b6c8-89f5-4039-b7d3-ac7544358084" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/digimovies.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/digimovies.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digimovies.html" beforeDir="false" afterPath="$PROJECT_DIR$/digimovies.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +45,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -64,7 +69,9 @@
       <workItem from="1723945056599" duration="4408000" />
       <workItem from="1724003355712" duration="3402000" />
       <workItem from="1724008415612" duration="3262000" />
-      <workItem from="1724029042327" duration="9841000" />
+      <workItem from="1724029042327" duration="10260000" />
+      <workItem from="1724050360509" duration="58000" />
+      <workItem from="1724050430060" duration="2663000" />
     </task>
     <servers />
   </component>

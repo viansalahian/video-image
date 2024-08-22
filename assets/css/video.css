@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: #242424;
+    width: 100%;
+    height: 550px;
+    margin: 100px 0;
+}
+
+.img {
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.img img {
+    width: 66%;
+    height: 550px;
+
+}
+
+.icon-left {
+    display: flex;
+    position: absolute;
+    left: 19px;
+    bottom: 13px;
+    gap: 30px;
+    cursor: pointer;
+    align-items: flex-end;
+}
+.icon-left i{
+    color:beige;
+}
+.icon-right{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    bottom: 13px;
+    gap: 30px;
+    cursor: pointer;
+}
+.icon-right i{
+    color:beige;
+}
+.range-element{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+
+}
+ .range {
+     display: block;
+     width: 100%;
+     margin: 10px 0;
+
+ }
+.tooltip{
+    display: flex;
+    position: relative;
+
+
+
+}
+.tool{
+    position: absolute;
+    background-color: rgba(37, 35, 35, 35%);
+    color: white;
+    width: 70px;
+    text-align: center;
+    padding: 5px;
+    bottom: 38px;
+    left: -27px;
+    z-index: 1;
+}
+

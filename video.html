@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="assets/css/video.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <div class="img">
+            <img src="assets/images/stars.jpg" alt="image1">
+            <div class="icon-left" id="left-icon">
+                <div class="tooltip" data-tooltip="پخش">
+                    <i class="fa fa-pause"></i>
+                </div>
+
+                <div class="tooltip" data-tooltip="5 ثانیه قبل">
+                    <i class="fa fa-arrow-rotate-backward"></i>
+                </div>
+
+                <div class="tooltip" data-tooltip="5 ثانیه بعد">
+                    <i class="fa fa-arrow-rotate-forward"></i>
+                </div>
+
+                <div class="tooltip" data-tooltip="صدا">
+                    <i class="fa fa-volume-high" id="volume"></i>
+                </div>
+
+            </div>
+            <div class="range-element">
+                <input type="range" id="range" value="80" class="range">
+            </div>
+            <div class="icon-right" id="right-icon">
+                <div class="tooltip" data-tooltip="سرعت پخش">
+                    <i class="fa fa-clock"></i>
+                </div>
+
+                <div class="tooltip" data-tooltip="تنظیمات">
+                    <i class="fa fa-gear"></i>
+                </div>
+
+                <div class="tooltip" data-tooltip="حالت تئاتر">
+                    <i class="fa fa-screwdriver"></i>
+                </div>
+
+                <div class="tooltip" data-tooltip="مینی پلیر">
+                    <i class="fa fa-tablet"></i>
+                </div>
+
+                <div class="tooltip" data-tooltip="تمام صفحه">
+                    <i class="fa fa-expand"></i>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<script>
+
+    let tooltip = document.querySelectorAll('.tooltip');
+    tooltip.forEach(function (tooltip) {
+        tooltip.addEventListener('mouseenter', function () {
+            let tooltipText = document.createElement('span');
+            tooltipText.className = 'tool';
+            tooltipText.innerText = tooltip.getAttribute('data-tooltip');
+            tooltip.appendChild(tooltipText);
+
+
+
+            setTimeout(function () {
+                tooltipText.style.visibility = 'visible';
+                tooltipText.style.opacity = '1';
+            }, 100)
+        });
+
+
+        tooltip.addEventListener('mouseleave', function () {
+            let tooltipText = tooltip.querySelector('.tool');
+            if (tooltipText) {
+                tooltipText.style.visibility = 'hidden';
+                tooltipText.style.opacity = '0';
+            }
+            setTimeout(function () {
+                tooltipText.remove();
+            }, 200)
+
+
+        });
+
+    });
+    let Range = document.querySelector('.range');
+    let wrapper = document.querySelector('.wrapper');
+    let volume = document.getElementById('volume');
+
+    function createRange() {
+        if (!document.querySelector('.volumeRange')) {
+            let volumeRange = document.createElement('input');
+            volumeRange.type = 'range';
+            volumeRange.min = '0';
+            volumeRange.max = '100';
+            volumeRange.className = 'volumeRange';
+            volumeRange.width = '50%';
+
+            volume.appendChild(volumeRange);
+        } else {
+            document.querySelector('.volumeRange').style.display='block';
+
+        }
+
+    }
+
+    volume.addEventListener('mouseenter', createRange);
+
+    function hideRange() {
+        let volumeRange = document.querySelector('.volumeRange');
+        if (volumeRange) {
+            volumeRange.style.display = 'none';
+        }
+
+    }
+
+    volume.addEventListener("mouseleave", hideRange);
+
+
+    wrapper.addEventListener('mouseleave', function () {
+        setTimeout(function () {
+            Range.style.visibility = 'hidden';
+
+
+        }, 100)
+    })
+    wrapper.addEventListener('mouseenter', function () {
+        setTimeout(function () {
+            Range.style.visibility = 'visible';
+
+        }, 200)
+    })
+
+
+</script>
+</body>
+</html>

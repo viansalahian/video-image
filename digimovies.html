@@ -54,13 +54,10 @@
 
 <div class="container">
     <div class="top-movies">
-
         <a href="#" class="movie-btn">فیلم های برگزیده</a>
-
     </div>
     <div class="slider-wrapper">
         <button class="slide-btn fa fa-angle-left prev-btn"></button>
-
         <div class="images-list">
             <img src="assets/images/heron.jpg" class="image-item">
             <img src="assets/images/flyMoon.jpg" class="image-item">
@@ -74,7 +71,17 @@
     </div>
 </div>
 <div class="advanced-search">
-    <
+    <div class="title-advanced-search">
+        <i class="fa fa-qrcode"></i>
+        <span>جستجو</span>
+        <strong>حرفه ای</strong>
+    </div>
+    <form>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </form>
 </div>
 <script>
     var check = document.querySelector('#check');
@@ -82,7 +89,6 @@
     var ball = document.querySelector('.ball');
     var logo = document.querySelector('.logo');
     var nav = document.querySelector('.nav');
-
     check.addEventListener('change', function () {
         if (this.checked == true) {
             box.setAttribute('style', "background-color:white;");
@@ -103,9 +109,11 @@
     const initSlider = () => {
         const imageList = document.querySelector(".slider-wrapper .images-list");
         const slideButtons = document.querySelectorAll(".slider-wrapper .slide-btn");
+        console.log(imageList)
+        console.log(slideButtons)
         slideButtons.forEach(button => {
             button.addEventListener("click", () => {
-                const direction = button.className === "prev-btn" ? -1 : 1;
+                const direction = button.className === "next-btn" ? -1 : 1;
                 const scrollAmount = imageList.clientWidth * direction;
                 imageList.scrollBy({left: scrollAmount, behavior: "smooth"});
             });

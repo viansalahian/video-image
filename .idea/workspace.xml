@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b62b6c8-89f5-4039-b7d3-ac7544358084" name="Changes" comment="">
+    <list default="true" id="6b62b6c8-89f5-4039-b7d3-ac7544358084" name="Changes" comment="video img">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/digimovies.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/digimovies.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/digimovies.html" beforeDir="false" afterPath="$PROJECT_DIR$/digimovies.html" afterDir="false" />
@@ -36,6 +36,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.video.html.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/practice&quot;,
@@ -71,11 +72,29 @@
       <workItem from="1724008415612" duration="3262000" />
       <workItem from="1724029042327" duration="10260000" />
       <workItem from="1724050360509" duration="58000" />
-      <workItem from="1724050430060" duration="2663000" />
+      <workItem from="1724050430060" duration="4956000" />
+      <workItem from="1724114171746" duration="2490000" />
+      <workItem from="1724202591099" duration="13586000" />
+      <workItem from="1724220093910" duration="10386000" />
+      <workItem from="1724287220561" duration="11358000" />
     </task>
+    <task id="LOCAL-00001" summary="video img">
+      <option name="closed" value="true" />
+      <created>1724299191883</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724299191883</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="slider" />
+    <MESSAGE value="video img" />
+    <option name="LAST_COMMIT_MESSAGE" value="video img" />
   </component>
 </project>

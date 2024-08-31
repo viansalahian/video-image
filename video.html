@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="assets/css/video.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <div class="img">
+            <video src="assets/videos/2a6be75aae48ce0225d1b1afff68f28e55414198-480p.mp4" class="video">
+
+            </video>
+            <div class="icon-left" id="left-icon">
+                <div class="tooltip" data-tooltip="پخش">
+                    <i class="fa fa-play play" id="play"></i>
+                    <i class="fa fa-pause pause" id="pause"></i>
+
+                </div>
+
+
+                <div class="tooltip" data-tooltip="5 ثانیه قبل">
+                    <i class="fa fa-arrow-rotate-backward backward"></i>
+                </div>
+
+                <div class="tooltip" data-tooltip="5 ثانیه بعد">
+                    <i class="fa fa-arrow-rotate-forward forward"></i>
+                </div>
+
+                <div class="tooltip" data-tooltip="صدا">
+                    <i class="fa fa-volume-high volume" id="volume"></i>
+                    <i class="fa fa-volume-mute mute"></i>
+                    <div class="volume-range">
+                        <input type="range" value="50" id="volumeRange">
+                    </div>
+                </div>
+
+            </div>
+            <div class="range-element">
+                <input type="range" id="range" value="80" class="range">
+            </div>
+            <div class="icon-right" id="right-icon">
+                <div class="tooltip" data-tooltip="سرعت پخش">
+                    <i class="fa fa-clock clock"></i>
+                    <div class="speed">
+                        <h3>سرعت پخش</h3>
+                        <input type="radio">50%<br>
+                        <input type="radio">75%<br>
+                        <input type="radio" checked="checked">100%<br>
+                        <input type="radio">125%<br>
+                        <input type="radio">150%<br>
+                        <input type="radio">175%<br>
+                        <input type="radio">200%<br>
+                    </div>
+                </div>
+
+                <div class="tooltip" data-tooltip="تنظیمات">
+                    <i class="fa fa-gear gear"></i>
+                    <div class="quality">
+                        <h3>کیفیت</h3>
+                        <input type="radio">خودکار(براساس سرعت اینترنت شما)<br>
+                        <input type="radio">144p<br>
+                        <input type="radio" checked="checked">240p<br>
+                        <input type="radio">360p<br>
+                        <input type="radio">480p<br>
+                        <input type="radio">720p<br>
+                    </div>
+                </div>
+
+                <div class="tooltip" data-tooltip="حالت تئاتر">
+                    <i class="fa fa-screwdriver"></i>
+                </div>
+
+                <div class="tooltip" data-tooltip="مینی پلیر">
+                    <i class="fa fa-tablet"></i>
+                </div>
+
+                <div class="tooltip" data-tooltip="تمام صفحه">
+                    <i class="fa fa-expand fullscreen"></i>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<script>
+    //tooltip
+    let tooltip = document.querySelectorAll('.tooltip');
+    tooltip.forEach(function (tooltip) {
+        tooltip.addEventListener('mouseenter', function () {
+            let tooltipText = document.createElement('span');
+            tooltipText.className = 'tool';
+            tooltipText.innerText = tooltip.getAttribute('data-tooltip');
+            tooltip.appendChild(tooltipText);
+
+
+            setTimeout(function () {
+                tooltipText.style.visibility = 'visible';
+                tooltipText.style.opacity = '1';
+            }, 100)
+        });
+
+
+        tooltip.addEventListener('mouseleave', function () {
+            let tooltipText = tooltip.querySelector('.tool');
+            if (tooltipText) {
+                tooltipText.style.visibility = 'hidden';
+                tooltipText.style.opacity = '0';
+            }
+            setTimeout(function () {
+                tooltipText.remove();
+            }, 200)
+
+
+        });
+
+    });
+
+
+    //play&pause
+    let btnPlay = document.getElementById('play');
+    let btnPause = document.getElementById('pause');
+    let video = document.querySelector('.video');
+    btnPlay.addEventListener("click", function () {
+        video.play();
+        btnPlay.style.visibility = 'hidden';
+        btnPause.style.visibility = 'visible';
+    })
+    btnPause.addEventListener("click", function () {
+        video.pause();
+        btnPlay.style.visibility = 'visible';
+        btnPause.style.visibility = 'hidden';
+
+    })
+    //prev&next
+    let backward = document.querySelector('.backward');
+    let forward = document.querySelector('.forward');
+    backward.addEventListener("click", function () {
+        video.currentTime -= 10;
+
+    })
+    forward.addEventListener("click", function () {
+        video.currentTime += 10;
+
+    })
+    //volume
+    let volume = document.querySelector('.volume');
+    let volumeRange = document.querySelector('.volume-range');
+    let mute = document.querySelector('.mute');
+    volume.addEventListener('mouseenter', function () {
+        volumeRange.style.visibility = 'visible';
+    })
+    /////dont know!!!
+    volume.addEventListener('mouseleave', function (e) {
+        if (!volumeRange.contains(e.relatedTarget))
+            volumeRange.style.visibility = 'hidden';
+
+    })
+
+    volume.addEventListener("click", function () {
+        volume.style.visibility = 'hidden';
+        mute.style.visibility = 'visible';
+    })
+    mute.addEventListener("click", function () {
+        mute.style.visibility = 'hidden';
+        volume.style.visibility = 'visible';
+    })
+
+
+    //speed
+    let clock = document.querySelector('.clock');
+    let speed = document.querySelector('.speed');
+    clock.addEventListener('click', function () {
+        speed.style.visibility = 'visible';
+        clock.addEventListener('click', function () {
+            if (speed.style.visibility === 'visible') {
+
+                speed.style.visibility = 'hidden';
+
+            } else {
+                speed.style.visibility = 'visible';
+            }
+        })
+
+
+    });
+    //quality
+    let gear = document.querySelector('.gear');
+    let quality = document.querySelector('.quality');
+    gear.addEventListener('click', function () {
+        quality.style.visibility = 'visible';
+        gear.addEventListener('click', function () {
+            if (quality.style.visibility === 'visible') {
+
+                quality.style.visibility = 'hidden';
+
+            } else {
+                quality.style.visibility = 'visible';
+            }
+        })
+
+
+    });
+    //fullscreen
+    let fullscreen = document.querySelector('.fullscreen');
+    fullscreen.addEventListener('click', function () {
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else {
+            if (screen.height === window.innerHeight) {
+                document.exitFullscreen();
+
+            }
+        }
+
+    })
+
+    let Range = document.querySelector('.range');
+    let wrapper = document.querySelector('.wrapper');
+    volume.addEventListener("mouseleave", hideRange);
+
+
+    wrapper.addEventListener('mouseleave', function () {
+        setTimeout(function () {
+            Range.style.visibility = 'hidden';
+
+
+        }, 100)
+    })
+    wrapper.addEventListener('mouseenter', function () {
+        setTimeout(function () {
+            Range.style.visibility = 'visible';
+
+        }, 200)
+    })
+
+    function hideRange() {
+        let volumeRange = document.querySelector('.volumeRange');
+        if (volumeRange) {
+            volumeRange.style.display = 'none';
+        }
+    }
+
+
+</script>
+</body>
+</html>
+
+let volume = document.getElementById('volume');
+function createRange() {
+if (!document.querySelector('.volumeRange')) {
+let volumeRange = document.createElement('input');
+volumeRange.type = 'range';
+volumeRange.min = '0';
+volumeRange.max = '100';
+volumeRange.className = 'volumeRange';
+volumeRange.width = '50%';
+
+volume.appendChild(volumeRange);
+} else {
+document.querySelector('.volumeRange').style.display = 'block';
+
+}
+
+}
+
+volume.addEventListener('mouseenter', createRange);
+
+
+}

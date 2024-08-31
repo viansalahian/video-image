@@ -32,12 +32,19 @@ body {
     cursor: pointer;
     align-items: flex-end;
 }
+<<<<<<< HEAD
 
 .icon-left i {
     color: beige;
 }
 
 .icon-right {
+=======
+.icon-left i{
+    color:beige;
+}
+.icon-right{
+>>>>>>> origin/master
     display: flex;
     position: absolute;
     right: 20px;
@@ -45,18 +52,26 @@ body {
     gap: 30px;
     cursor: pointer;
 }
+<<<<<<< HEAD
 
 .icon-right i {
     color: beige;
 }
 
 .range-element {
+=======
+.icon-right i{
+    color:beige;
+}
+.range-element{
+>>>>>>> origin/master
     display: flex;
     width: 100%;
     position: absolute;
     bottom: 30px;
 
 }
+<<<<<<< HEAD
 
 .range {
     display: block;
@@ -66,13 +81,28 @@ body {
 }
 
 .tooltip {
+=======
+ .range {
+     display: block;
+     width: 100%;
+     margin: 10px 0;
+
+ }
+.tooltip{
+>>>>>>> origin/master
     display: flex;
     position: relative;
 
 
+<<<<<<< HEAD
 }
 
 .tool {
+=======
+
+}
+.tool{
+>>>>>>> origin/master
     position: absolute;
     background-color: rgba(37, 35, 35, 35%);
     color: white;
@@ -84,6 +114,7 @@ body {
     z-index: 1;
 }
 
+<<<<<<< HEAD
 .video {
     height: 550px;
 }
@@ -133,3 +164,5 @@ input[type='radio'] {
     position: absolute;
 }
 
+=======
+>>>>>>> origin/master

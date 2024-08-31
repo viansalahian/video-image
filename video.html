@@ -10,6 +10,7 @@
 <div class="container">
     <div class="wrapper">
         <div class="img">
+<<<<<<< HEAD
             <video src="assets/videos/2a6be75aae48ce0225d1b1afff68f28e55414198-480p.mp4" class="video">
 
             </video>
@@ -35,6 +36,24 @@
                     <div class="volume-range">
                         <input type="range" value="50" id="volumeRange">
                     </div>
+=======
+            <img src="assets/images/stars.jpg" alt="image1">
+            <div class="icon-left" id="left-icon">
+                <div class="tooltip" data-tooltip="پخش">
+                    <i class="fa fa-pause"></i>
+                </div>
+
+                <div class="tooltip" data-tooltip="5 ثانیه قبل">
+                    <i class="fa fa-arrow-rotate-backward"></i>
+                </div>
+
+                <div class="tooltip" data-tooltip="5 ثانیه بعد">
+                    <i class="fa fa-arrow-rotate-forward"></i>
+                </div>
+
+                <div class="tooltip" data-tooltip="صدا">
+                    <i class="fa fa-volume-high" id="volume"></i>
+>>>>>>> origin/master
                 </div>
 
             </div>
@@ -43,6 +62,7 @@
             </div>
             <div class="icon-right" id="right-icon">
                 <div class="tooltip" data-tooltip="سرعت پخش">
+<<<<<<< HEAD
                     <i class="fa fa-clock clock"></i>
                     <div class="speed">
                         <h3>سرعت پخش</h3>
@@ -67,6 +87,13 @@
                         <input type="radio">480p<br>
                         <input type="radio">720p<br>
                     </div>
+=======
+                    <i class="fa fa-clock"></i>
+                </div>
+
+                <div class="tooltip" data-tooltip="تنظیمات">
+                    <i class="fa fa-gear"></i>
+>>>>>>> origin/master
                 </div>
 
                 <div class="tooltip" data-tooltip="حالت تئاتر">
@@ -78,7 +105,11 @@
                 </div>
 
                 <div class="tooltip" data-tooltip="تمام صفحه">
+<<<<<<< HEAD
                     <i class="fa fa-expand fullscreen"></i>
+=======
+                    <i class="fa fa-expand"></i>
+>>>>>>> origin/master
                 </div>
 
             </div>
@@ -88,7 +119,11 @@
 
 </div>
 <script>
+<<<<<<< HEAD
     //tooltip
+=======
+
+>>>>>>> origin/master
     let tooltip = document.querySelectorAll('.tooltip');
     tooltip.forEach(function (tooltip) {
         tooltip.addEventListener('mouseenter', function () {
@@ -98,6 +133,10 @@
             tooltip.appendChild(tooltipText);
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
             setTimeout(function () {
                 tooltipText.style.visibility = 'visible';
                 tooltipText.style.opacity = '1';
@@ -119,6 +158,7 @@
         });
 
     });
+<<<<<<< HEAD
 
 
     //play&pause
@@ -221,6 +261,39 @@
 
     let Range = document.querySelector('.range');
     let wrapper = document.querySelector('.wrapper');
+=======
+    let Range = document.querySelector('.range');
+    let wrapper = document.querySelector('.wrapper');
+    let volume = document.getElementById('volume');
+
+    function createRange() {
+        if (!document.querySelector('.volumeRange')) {
+            let volumeRange = document.createElement('input');
+            volumeRange.type = 'range';
+            volumeRange.min = '0';
+            volumeRange.max = '100';
+            volumeRange.className = 'volumeRange';
+            volumeRange.width = '50%';
+
+            volume.appendChild(volumeRange);
+        } else {
+            document.querySelector('.volumeRange').style.display='block';
+
+        }
+
+    }
+
+    volume.addEventListener('mouseenter', createRange);
+
+    function hideRange() {
+        let volumeRange = document.querySelector('.volumeRange');
+        if (volumeRange) {
+            volumeRange.style.display = 'none';
+        }
+
+    }
+
+>>>>>>> origin/master
     volume.addEventListener("mouseleave", hideRange);
 
 
@@ -238,6 +311,7 @@
         }, 200)
     })
 
+<<<<<<< HEAD
     function hideRange() {
         let volumeRange = document.querySelector('.volumeRange');
         if (volumeRange) {
@@ -272,3 +346,9 @@ volume.addEventListener('mouseenter', createRange);
 
 
 }
+=======
+
+</script>
+</body>
+</html>
+>>>>>>> origin/master

@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="6b62b6c8-89f5-4039-b7d3-ac7544358084" name="Changes" comment="video img">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="6b62b6c8-89f5-4039-b7d3-ac7544358084" name="Changes" comment="video img" />
+>>>>>>> origin/master
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +26,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -36,6 +41,9 @@
     &quot;accountId&quot;: &quot;97cf388c-af08-4292-a7b6-cf85326a0ecc&quot;
   }
 }</component>
+=======
+  </component>
+>>>>>>> origin/master
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -44,6 +52,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
@@ -62,6 +71,26 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.video.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/practice",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+>>>>>>> origin/master
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -88,6 +117,7 @@
       <workItem from="1724202591099" duration="13586000" />
       <workItem from="1724220093910" duration="10386000" />
       <workItem from="1724287220561" duration="12488000" />
+<<<<<<< HEAD
       <workItem from="1724719723272" duration="1241000" />
       <workItem from="1724894130000" duration="5817000" />
       <workItem from="1724914443589" duration="9099000" />
@@ -96,6 +126,8 @@
       <workItem from="1724984711020" duration="1220000" />
       <workItem from="1724985952372" duration="3056000" />
       <workItem from="1725086468120" duration="4217000" />
+=======
+>>>>>>> origin/master
     </task>
     <task id="LOCAL-00001" summary="video img">
       <option name="closed" value="true" />
@@ -105,6 +137,7 @@
       <option name="project" value="LOCAL" />
       <updated>1724299191883</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00002" summary="video img">
       <option name="closed" value="true" />
       <created>1724973902849</created>
@@ -146,6 +179,9 @@
       <updated>1725089365122</updated>
     </task>
     <option name="localTasksCounter" value="7" />
+=======
+    <option name="localTasksCounter" value="2" />
+>>>>>>> origin/master
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,8 +200,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="slider" />
+<<<<<<< HEAD
     <MESSAGE value="update" />
     <MESSAGE value="video img" />
     <option name="LAST_COMMIT_MESSAGE" value="video img" />
+=======
+    <MESSAGE value="video img" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+>>>>>>> origin/master
   </component>
 </project>

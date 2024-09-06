@@ -1,0 +1,39 @@
+#up{
+    outline: none;
+    background-color:black;
+    width: 40px;
+    height: 40px;
+}
+i.fa.fa-arrow-up{
+    color: white;
+}
+i.fa.fa-arrow-down{
+    color: white;
+}
+i.fa.fa-arrow-left{
+    color: white;
+}
+i.fa.fa-arrow-right{
+    color: white;
+}
+
+
+#down{
+    outline: none;
+    background-color:black;
+    width: 40px;
+    height: 40px;
+}
+#left{
+    outline: none;
+    background-color:black;
+    width: 40px;
+    height: 40px;
+
+}
+#right{
+    outline: none;
+    background-color:black;
+    width: 40px;
+    height: 40px
+}

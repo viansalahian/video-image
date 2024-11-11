@@ -1,0 +1,34 @@
+body{
+    background-color: #dbddde94;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin-left: 80vh;
+}
+
+.inner-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.input-box {
+    border: none;
+    padding: 13px 16vh 2vh 2vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.btn {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 11px 7px;
+    font-size: 12px;
+    margin: 0px 5px;
+    cursor: pointer;
+
+}
+

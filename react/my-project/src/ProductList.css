@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(137 193 255 / 26%);
+}
+.container{
+    display: flex;
+    justify-content: center;
+
+}
+.container .btn {
+    border: 2px solid #1834ff36;
+    background-color: #487bf580;
+    cursor: pointer;
+    color: #ffffff;
+}
+.container .text-box{
+    border: 2px solid #77a1ff5e;
+    margin: 0 5px;
+    height: 25px;
+    border-radius: 2px;
+}
